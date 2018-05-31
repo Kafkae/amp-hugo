@@ -1,0 +1,14 @@
+<nav class="pagination">
+  <ul class="pagination__wrap"> 
+         {{if .Paginator.HasPrev }}
+      <li class="pagination__prev pagination__list"><a class="pagination__link" href="{{ .Paginator.Prev.URL }}">туды</a></li>
+      {{ end }}
+      <li>
+
+      <span class="pagination__info">Страница {{ .Paginator.PageNumber }} из {{ .Paginator.TotalPages }}</a>
+      </li>
+          {{ if .Paginator.HasNext }}</a>
+      <li class="pagination__next pagination__list"><a class="pagination__link" href="{{ .Paginator.Next.URL }}">сюды</a></li>
+         {{ end }}
+  </ul>
+</nav>

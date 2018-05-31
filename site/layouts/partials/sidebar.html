@@ -1,0 +1,10 @@
+<amp-sidebar  class="menu" id="sidebar1" layout="nodisplay" side="right">
+  <nav class="navigation">
+      <ul class="navigation__wrap">
+              {{ $currentPage := . }}
+              {{ range .Site.Menus.main }}
+           <li class="navigation__items"><a href="{{ .URL }}"  class=" navigation__link" {{if  $currentPage.IsMenuCurrent "main" . }} {{end}}>{{ .Name }}</a></li>
+           {{end}}
+      </ul>
+  </nav>
+</amp-sidebar>

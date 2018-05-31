@@ -1,0 +1,14 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+<main class="main-content">
+  <div class="promo">
+      <h1 class="promo__title">{{ .Title }}</h1>
+      <span class="promo__description">{{ .Site.Params.description }}</span>
+  </div>
+  <amp-img class="logo-main" src="/images/logo.svg" width="500" height="500" alt="{{ .Title }}"></amp-img>
+  </main>
+{{ partial "footer.html" . }}
+{{ partial "sidebar.html" . }}
+
+

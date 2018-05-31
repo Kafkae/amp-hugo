@@ -1,0 +1,13 @@
+<header class="header">
+  <div class="logo">
+        <div class="wrap" itemscope itemtype="http://schema.org/Organization"></div>
+        <a href="{{.Site.BaseURL}}">
+          <amp-img itemprop="logo" src="/images/logo.svg" width="150" height="40" class="logo__image" alt="{{ .Title }}"></amp-img>
+        </a>
+  </div>
+  <button on='tap:sidebar1.open' class="burger">
+      <div class='burger-wrapper'>
+          <span class='burger__line'></span>
+      </div>
+  </button>
+</header>

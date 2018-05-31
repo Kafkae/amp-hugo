@@ -1,0 +1,12 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+<div class="wrap list">
+  <h1 class="list__title">список постов</h1>
+  {{ range .Paginator.Pages.ByWeight }} {{ partial "page-summary" . }} {{ end }}
+</div>
+
+{{ partial "pagination.html" . }}
+
+
+{{ partial "footer.html" . }}
+{{ partial "sidebar.html" . }}

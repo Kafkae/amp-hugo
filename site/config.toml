@@ -1,0 +1,23 @@
+baseURL         = "/"
+title           = "JAMstack blog"
+DefaultContentLanguage = "ru"
+Paginate = 4
+[Params]
+  amp = true
+  description = "Учебный блог, сделанный с помощью генератора Hugo, технологии AMP и расположенный на netlify!"
+
+
+[[menu.main]]
+  name = "Посты"
+  weight = -100
+  url = "/posts/"
+
+[[menu.main]]
+  name = "Контакты"
+  weight = -100
+  url = "/contacts/"
+
+[[menu.main]]
+  name = "Обо мне"
+  weight = -100
+  url = "/about/"

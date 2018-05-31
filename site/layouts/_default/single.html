@@ -1,0 +1,13 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+<div class="post">
+  <main class="post__wrapper">
+    <article class="post__single{{ with .Params.categories }} -{{ . }}{{ end }}">
+        <div class="post__content">
+          {{ .Content }}
+        </div>
+    </article>
+  </main>
+</div>
+{{ partial "footer.html" . }}
+{{ partial "sidebar.html" . }}
